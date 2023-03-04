@@ -1,0 +1,28 @@
+body {
+    position: relative;
+   
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+
+  .drawer { 
+    height: 100%;
+    background: white;
+    position: fixed;
+    width: 40%;
+    z-index: 200;
+    box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
+    transform: translateX(100%);
+}
+.drawer.open {
+     transition: right .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+    transform: translateX(0);
+ }
+
+ .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
