@@ -4,9 +4,9 @@ export interface Props extends HTMLAttributes<HTMLButtonElement> {
   /** Text for button */
   children: ReactNode;
   /** Variant changes the background color */
-  variant: 'primary' | 'secondary' | 'success';
-  size: 'sm' | 'md' | 'lg' | 'xl';
-  fullWidth: boolean;
+  variant?: 'primary' | 'secondary' | 'success';
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+  fullWidth?: boolean;
 }
 
 const variantMap = {

@@ -1,0 +1,14 @@
+body {
+  position: relative;
+ 
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
